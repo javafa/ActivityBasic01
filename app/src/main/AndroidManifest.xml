@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kodonho.android.activitybasic01">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:launchMode="singleInstance"> <!-- 하나의 Activity 인스턴스만 생성하기 위한 옵션 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity2" />
+        <activity android:name=".Activity3" />
+        <activity android:name=".Activity4"
+            android:theme="@style/Theme.AppCompat.Translucent"/> <!-- 액티비티를 투명하게 하는 테마 : /res/values/style.xml에 정의 -->
+        <activity android:name=".Activity5"></activity>
+    </application>
+
+</manifest>
